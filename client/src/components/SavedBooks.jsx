@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import React from "react";
+import HelperFunctions from "../utils/HelperFunctions";
 
 const Result = ({ book, handleDelete }) => {
   return (
@@ -14,21 +15,35 @@ const Result = ({ book, handleDelete }) => {
           <Row className="d-flex justify-content-between">
             <Col className="col-5 mb-4">
               <h2>{book.title}</h2>
+              <h6>Written by: {HelperFunctions.oxfordComma(book.authors || ["No author specified"])}</h6>
             </Col>
             <Col className="col-3">
               <Row>
                 <Col>
-                <a className="btn btn-primary" href={book.link} target="_blank">View</a>
+                  <a
+                    className="btn btn-primary"
+                    href={book.link}
+                    target="_blank"
+                  >
+                    View
+                  </a>
                 </Col>
                 <Col>
-                <Button className="btn-danger" onClick={() => handleDelete(book._id)}>Delete</Button>
+                  <Button
+                    className="btn-danger"
+                    onClick={() => handleDelete(book._id)}
+                  >
+                    Delete
+                  </Button>
                 </Col>
               </Row>
             </Col>
           </Row>
           <Row>
             <Col xs={2}>
-              {book.image && <img className="shadow-sm" src={book.image} alt="book cover" />}
+              {book.image && (
+                <img className="shadow-sm" src={book.image} alt="book cover" />
+              )}
             </Col>
             <Col xs={10}>
               <p>{book.description}</p>

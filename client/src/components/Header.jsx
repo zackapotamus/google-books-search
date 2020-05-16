@@ -10,7 +10,7 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 function Header() {
   return (
     <>
-      <Navbar bg="light" variant="light">
+      <Navbar bg="dark" variant="dark">
         <Navbar.Brand>Google Books Search
         </Navbar.Brand>
         <Nav className="mr-auto">
