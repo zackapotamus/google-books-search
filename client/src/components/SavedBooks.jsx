@@ -21,7 +21,7 @@ const Result = ({ book, handleDelete }) => {
                 <a className="btn btn-primary" href={book.link} target="_blank">View</a>
                 </Col>
                 <Col>
-                <Button className="btn-success" onClick={() => handleDelete(book._id)}>Save</Button>
+                <Button className="btn-danger" onClick={() => handleDelete(book._id)}>Delete</Button>
                 </Col>
               </Row>
             </Col>

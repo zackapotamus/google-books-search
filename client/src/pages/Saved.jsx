@@ -25,7 +25,7 @@ const Saved = () => {
       <Card.Header><h3>Saved Books</h3></Card.Header>
       <Card.Body>
         {books.map((book, index) => (
-          <SavedBooks key={index} book={book} handleDelte={handleDelete}/>
+          <SavedBooks key={index} book={book} handleDelete={handleDelete}/>
         ))}
       </Card.Body>
     </Card>
