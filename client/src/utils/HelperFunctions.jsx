@@ -1,7 +1,7 @@
 export default {
   oxfordComma: function(arrayOfStrings) {
     if (!(Array.isArray(arrayOfStrings) && arrayOfStrings.length)) {
-      return "No Author Listed";
+      return "";
     }
     let stringArray = [...arrayOfStrings];
     let arrayLength = stringArray.length;
