@@ -9,12 +9,6 @@ router.route("/")
 // Matches with "/api/books/:id"
 router
   .route("/:id")
-  // .get(booksController.findById)
   .delete(booksController.remove);
-
-// Matches with "/api/books/search/:query"
-router
-  .route("/search/")
-  .get(booksController.searchBooks);
 
 module.exports = router;

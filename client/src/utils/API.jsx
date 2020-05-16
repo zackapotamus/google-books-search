@@ -15,7 +15,7 @@ export default {
   },
   // Search for books
   searchBooks: function(query) {
-    return axios.get("/api/books/search", {
+    return axios.get("/api/search", {
       params: {
         query
       }

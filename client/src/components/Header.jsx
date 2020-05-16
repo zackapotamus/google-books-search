@@ -17,6 +17,9 @@ function Header() {
           <LinkContainer to="/search">
             <Nav.Link>Search</Nav.Link>
           </LinkContainer>
+          <LinkContainer to="/saved">
+            <Nav.Link>Saved</Nav.Link>
+          </LinkContainer>
         </Nav>
       </Navbar>
       <Jumbotron fluid>
