@@ -43,9 +43,9 @@ I am no longer maintaining this application, but I will review PRs.
 
 ## Screenshots
 
-![search page](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+![search page](./client/public/img/search.png)
 
-![saved page](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+![saved page](./client/public/img/saved.png)
 
 ## Links
 
